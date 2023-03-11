@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +11,7 @@ li{
 }
 a{
     text-decoration: none;
+    transition: all 2s ease;
 }
 .bgBody{
     background-color: #EAD3cb;
@@ -160,6 +164,7 @@ a{
     text-align: center;
 }
 .buttonFormulario{
+    cursor: pointer;
     margin-top: 15px;
     display: flex;
     justify-content: center;
