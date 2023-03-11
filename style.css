@@ -164,10 +164,12 @@ a{
     text-align: center;
 }
 .buttonFormulario{
-    cursor: pointer;
     margin-top: 15px;
     display: flex;
     justify-content: center;
+}
+.button{
+    cursor: pointer;
 }
 .textAreaFormulario{
     resize: none;
@@ -181,3 +183,44 @@ a{
     text-align: center;
     flex-direction: column;
 }
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+  
+.back-to-top:hover {
+    background-color: #555;
+}
+.dropdown {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #EAD3cb;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.anchorSeccion{
+    margin-left: 70px;
+}
+  
+  
+  
