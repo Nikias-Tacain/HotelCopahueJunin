@@ -221,6 +221,104 @@ a{
 .anchorSeccion{
     margin-left: 70px;
 }
-  
-  
+.dropdown-media{
+    display: none;
+}
+.arrowHeaderMedia{
+    background-color: #BDC7C9;
+    border: solid 1px white;
+    border-radius: 12px;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 320px) {
+    .navBar{
+        display: none;
+    }
+    .dropdown-media{
+        display: block;
+        text-align: center;
+    }
+    .arrowHeader{
+        display: none;
+    }
+    .arrowHeaderMedia{
+        display: block;
+    }
+    .corrouselAnimation{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .inicioBox{
+        display: block;
+    }
+    .boxDescription{
+        margin: auto;
+        text-align: center;
+        width: 70%;
+        height: 70%;
+    }
+    .instalacionesyServicios{
+        margin-top: 60px;
+    }
+    .instalacionesServicios{
+        display: block;
+        text-align: center;
+    }
+    .SuperposicionInfoWifi{
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+    .imgLobby{
+        width: 80%;
+        height: 450px;
+    }
+    .SuperposicionInfoLobby{
+        margin-left: 120px;
+        margin-top: 700px;
+    }
+    .imgPiscina{
+        width: 80%;
+        height: 450px;
+    }
+    .SuperposicionInfoPiscina{
+        margin-left: 110px;
+        margin-top: 1150px;
+    }
+    .habitaciones{
+        margin-top: 35px;
+    }
+    .habitacionesContenedor{
+        display: block;
+        text-align: center;
+    }
+    .habitacionesCard{
+        margin: auto;
+        width: 80%;
+    }
+    .buttonReserva{
+        width: 30%;
+    }
+    .reserva{
+        margin-top: 35px;
+    }
+    .SeccionReserva{
+        display: block;
+        text-align: center;
+    }
+    .SeccionContacto{
+        margin: auto;
+        width: 80%;
+        height: 40%;
+    }
+    .formulario{
+        margin-top: 15px;
+    }
+    .FooterCopahue{
+        margin-top: 50px;
+    }
+
+
+}
   
