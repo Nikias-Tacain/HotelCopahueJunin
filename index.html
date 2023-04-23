@@ -6,47 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Copahue Junin</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="shortcut icon" href="/images/logoCopahue.webp" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
 </head>
 <body class="bgBody">
     <header class="headerCopahue">
-        <a class="arrowHeader" href="#navBar">↓</a>
-        <a class="arrowHeaderMedia" href="#dropdown-media">↓</a>
+        <div class="arrowsHeader">
+            <a class="arrowHeader" href="#navBar">↓</a>
+        </div>
+        <img class="headerCopahueImg" src="./images/copahue.jpg">
     </header>
     <main>
         <div id="navBar" class="navBar">
             <ul class="navBar_ul">
                 <li><a href="#navBar">INICIO</a></li>
-                <li class="dropdown"><a>INSTALACIONES Y SERVICIOS ↓</a>
-                    <div class="dropdown-content">
-                        <a href="#instalacionesServicios">Servicios</a>
-                        <a href="#habitaciones" class="anchorSeccion">Habitaciones</a>
+                <li class="dropdown">
+                    <a>INSTALACIONES Y SERVICIOS ↓</a>
+                    <div class="dropdownContent">
+                        <a class="dropdownContentAnchorServicios" href="#instalacionesServicios">Servicios</a>
+                        <a class="dropdownContentAnchorHabitaciones" href="#habitaciones" class="anchorSeccion">Habitaciones</a>
                     </div>
                 </li>
                 <li><a href="#reserva">RESERVA</a></li>
             </ul>
         </div>
-        <div class="dropdown-center dropdown-media" id="dropdown-media">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Secciones
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#navBar">INICIO</a></li>
-              <li><a class="dropdown-item" href="#instalacionesServicios">SERVICIOS</a></li>
-              <li><a class="dropdown-item" href="#habitaciones">HABITACIONES</a></li>
-              <li><a class="dropdown-item" href="#reserva">RESERVA</a></li>
-            </ul>
-        </div>
-        <div id="inicio" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="500">
+        <div id="inicio">
             <div class="corrouselAnimation">
                 
             </div>
             <div class="inicioBox">
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.549728888294!2d-60.94445011383071!3d-34.59410032825001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb76c914cf4c7%3A0xfb36d398165e2596!2sHotel%20Copahue!5e0!3m2!1ses-419!2sar!4v1678413126672!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.549728888294!2d-60.94445011383071!3d-34.59410032825001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb76c914cf4c7%3A0xfb36d398165e2596!2sHotel%20Copahue!5e0!3m2!1ses-419!2sar!4v1678413126672!5m2!1ses-419!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="boxDescription">
                     <p>Ubicado en el centro de Junin, Hotel Copahue cuenta con 70 habitaciones, 2 cocheras privadas, amplio lobby con espacios de trabajo, salas de reuniones y un espacioso jardin con piscina al aire libre
@@ -58,77 +47,80 @@
                 </div>
             </div>
         </div>
-        <div id="instalacionesServicios" class="instalacionesyServicios" data-aos="flip-right" data-aos-delay="500">
-            <div class="titleInstalacionesServicios">
+        <div id="instalacionesServicios" class="instalacionesServicios">
+            <div class="instalacionesServicios__h3">
                 <h3>INSTALACIONES Y SERVICIOS</h3>
             </div>
-            <div>
-                <ul class="SuperposicionInfoWifi">
+            <div class="instalacionesServicios__tittles">
+                <ul>
                     <li>WIFI GRATIS</li>
                 </ul>
-                <ul class="SuperposicionInfoLobby">
+                <ul>
                     <li>LOBBY</li>
                 </ul>
-                <ul class="SuperposicionInfoPiscina">
+                <ul>
                     <li>PISCINA</li>
                 </ul>
             </div>
-            <div class="instalacionesServicios">
-                <div class="seccionInstalacionesServicios">
-                    <img class="imgSeccionesInstalacionesServicios" src="./images/wifiGratis.webp" alt="">
+            <div class="instalacionesServicios__cards">
+                <div>
+                    <img src="./images/wifiGratis.webp" alt="">
                 </div>
-                <div class="seccionInstalacionesServicios">
-                    <img class="imgSeccionesInstalacionesServicios imgLobby" src="./images/lobby.webp" alt="">
+                <div>
+                    <img src="./images/lobby.webp" alt="">
                 </div>
-                <div class="seccionInstalacionesServicios">
-                    <img class="imgSeccionesInstalacionesServicios imgPiscina" src="./images/piscina.webp" alt="">
+                <div class="imgPiscina">
+                    <img src="./images/piscina.webp" alt="">
                 </div>
             </div>
         </div>
         <div id="habitaciones" class="habitaciones" data-aos="fade-right">
-            <div class="titleHabitaciones">
+            <div class="habitacionesTitle">
                 <h3>HABITACIONES</h3>
             </div>
-            <div class="habitacionesContenedor">
-                <div class="habitacionesCard">
+            <div class="habitacionesContainer">
+                <div class="habitacionesContainerCards">
                     <div>
-                        <img class="imageCard" src="./images/suite.webp" alt="">
+                        <img class="habitacionesContainerCardsImage" src="./images/suite.webp" alt="">
                         <p class="titleInfoHabitacion">HABITACION SUITE</p>
                         <p> Escritorio - Valijero - Sillon - Frigobar - TV 32" LCD - WiFi Gratis - Climatizacion Centralizada - Habitacion No Fumador - Telefono.</p>
                     </div>
-                    <div class="buttonReserva">
+                    <br>
+                    <div class="buttonReservaHabitacion">
                         <a href="#reserva">RESERVAR</a>
                     </div>
                     
                 </div>
-                <div class="habitacionesCard">
+                <div class="habitacionesContainerCards">
                     <div>
-                        <img class="imageCard" src="./images/standar.webp" alt="">
+                        <img class="habitacionesContainerCardsImage" src="./images/standar.webp" alt="">
                         <P class="titleInfoHabitacion">HABITACION ESTANDAR</P>
                         <p> Escritorio - Valijero - TV 32" LCD - WiFi Gratis - Climatizacion Centralizada - Habitacion No Fumador - Telefono.</p>
                     </div>
-                    <div class="buttonReserva">
+                    <br>
+                    <div class="buttonReservaHabitacion">
                         <a href="#reserva">RESERVAR</a>
                     </div>
                 </div>
-                <div class="habitacionesCard">
+                <div class="habitacionesContainerCards">
                     <div>
-                        <img class="imageCard" src="./images/economica.webp" alt="">
+                        <img class="habitacionesContainerCardsImage" src="./images/economica.webp" alt="">
                         <P class="titleInfoHabitacion">HABITACION ECONOMICA</P>
                         <p> Escritorio - Valijero - TV 20" LCD - WiFi Gratis - Climatizacion Centralizada - Habitacion No Fumador - Telefono.</p>
                     </div>
-                    <div class="buttonReserva">
+                    <br>
+                    <div class="buttonReservaHabitacion">
                         <a href="#reserva">RESERVAR</a>
                     </div>
                 </div>
             </div>
         </div>
         <div id="reserva" class="reserva">
-            <div class="titleReserva">
+            <div class="reservaTitle">
                 <h3>RESERVA</h3>
             </div>
-            <div class="SeccionReserva">
-                <div class="SeccionContacto">
+            <div class="reservaSeccion">
+                <div class="reservaSeccionContacto">
                     <h4>CONTACTO</h4>
                     <P>Saavedra 80 - Junín (BA) Argentina</P>
                     <p>reservas@hotelcopahue.com</p>
@@ -150,7 +142,7 @@
             </div>
         </div>
     </main>
-    <footer class="FooterCopahue">
+    <footer class="footerCopahue">
         <div class="SeccionFooter">
             <div>
                 <p>©2022  Hotel Copahue SRL</p>
@@ -161,8 +153,6 @@
         </div>
         <a href="#" class="back-to-top">Subir ↑</a>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
