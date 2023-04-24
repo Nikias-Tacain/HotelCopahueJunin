@@ -184,28 +184,25 @@ a{
         width: 100%;
     }
     .boxDescription{
-        margin-top: 20px;
-        width: 100%;
-        height: 50%;
+        max-width: 320px !important;
         text-align: center;
     }
     .instalacionesServicios{
         margin-top: 200px;
     }
     .instalacionesServicios__tittles{
-        flex-direction: column !important;
-        justify-content: space-between !important;
-        margin-top: 240px !important;
-        height: 950px !important;
+        flex-direction: column;
+        max-width: 100%;
+        min-height: 1300px;
     }
     .instalacionesServicios__cards{
-        display: block !important;
-        margin: auto !important;
-        text-align: center !important;
-        padding-top: 7% !important;
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding-top: 7%;
     }
     .instalacionesServicios__cards img{
-        width: 320px !important;
+        width: 320px;
     }
     .habitacionesContainer{
         display: block;
@@ -214,7 +211,7 @@ a{
         width: 320px !important;
     }
     .buttonReservaHabitacion{
-        width: 30% !important;
+        width: 30%;
     }
     .reservaSeccion{
         display: block;
@@ -244,7 +241,7 @@ a{
     }
     .boxDescription{
         margin-top: 20px;
-        width: 100% !important;
+        max-width: 375px;
         height: 50%;
         text-align: center;
     }
@@ -252,28 +249,24 @@ a{
         margin-top: 200px;
     }
     .instalacionesServicios__tittles{
-        flex-direction: column !important;
-        justify-content: space-between !important;
-        margin-top: 240px !important;
-        height: 1000px !important;
+        flex-direction: column;
+        max-width: 100%;
+        min-height: 1300px;
     }
     .instalacionesServicios__cards{
-        display: block !important;
-        margin: auto !important;
-        text-align: center !important;
-        padding-top: 7% !important;
-    }
-    .instalacionesServicios__cards img{
-        width: 375px !important;
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding-top: 7%;
     }
     .habitacionesContainer{
         display: block;
     }
     .habitacionesContainerCards{
-        width: 375px !important;
+        max-width: 375px;
     }
     .buttonReservaHabitacion{
-        width: 30% !important;
+        width: 30%;
     }
     .reservaSeccion{
         display: block;
@@ -284,43 +277,33 @@ a{
 }
 @media screen and (max-width: 425px) {
     .corrouselAnimation{
-        width: 425px !important;
+        width: 100% !important;
     }
     .inicioBox{
-        display: block !important;
+        display: block;
     }
     .inicioBox iframe{
         width: 100%;
     }
     .boxDescription{
-        width: 425px !important;
+        width: 425px;
     }
     .instalacionesServicios{
         margin-top: 200px;
     }
     .instalacionesServicios__tittles{
-        flex-direction: column !important;
-        justify-content: space-between !important;
-        margin-top: 240px !important;
-        height: 970px !important;
-    }
-    .instalacionesServicios__cards{
-        display: block !important;
-        margin: auto !important;
-        text-align: center !important;
-        padding-top: 7% !important;
-    }
-    .instalacionesServicios__cards img{
-        width: 425px !important;
+        justify-content: space-between;
+        height: 340px;
+        width: 400px;
     }
     .habitacionesContainer{
         display: block;
     }
     .habitacionesContainerCards{
-        width: 425px !important;
+        width: 425px;
     }
     .buttonReservaHabitacion{
-        width: 30% !important;
+        width: 30%;
     }
     .reservaSeccion{
         display: block;
@@ -329,9 +312,51 @@ a{
         margin-top: 20px;
     }
 }
+@media screen and (max-width: 550px) {
+    .inicioBox{
+        display: block;
+    }
+    .corrouselAnimation{
+        max-width: 550px;
+    }
+    .inicioBox iframe{
+        width: 100%;
+    }
+    .boxDescription{
+        width: 425px !important;
+        margin: auto;
+    }
+    .instalacionesServicios{
+        margin-top: 270px;
+    }
+    .instalacionesServicios__tittles{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .instalacionesServicios__cards{
+        margin: auto;
+    }
+    .instalacionesServicios__cards img{
+        max-width: 180px;
+    }
+}
 @media screen and (max-width: 768px) {
     .corrouselAnimation{
-        width: 768px;
+        width: 766px;
+    }
+    .inicioBox{
+        margin-top: 70px;
+    }
+    .boxDescription{
+        width: 30%;
+        height: 70%;
+    }
+    .instalacionesServicios__h3{
+        margin-top: 70px;
+    }
+    .instalacionesServicios__tittles{
+        margin-top: 75px;
     }
     .instalacionesServicios__cards{
         margin: auto;
@@ -345,6 +370,12 @@ a{
     }
 }
 @media screen and (max-width: 1024px) {
+    .inicioBox{
+        margin-top: 50px;
+    }
+    .instalacionesServicios__h3{
+        margin-top: 20px;
+    }
     .instalacionesServicios__cards{
         margin: auto;
     }
