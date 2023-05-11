@@ -38,6 +38,10 @@ a{
     justify-content: space-around;
     border: solid 1px black;
 }
+.navBar ul li a{
+    font-family: 'Inter';
+    font-size: 15px;
+}
 .inicioBox{
     height: 35vh;
     display: flex;
@@ -53,6 +57,10 @@ a{
     display: flex;
     text-align: center;
     align-items: center;
+}
+.boxDescription p{
+    font-family: 'Roboto';
+    font-size: 15px;
 }
 .instalacionesServicios__h3{
     text-align: center;
@@ -78,12 +86,16 @@ a{
     border: 1px solid black;
     border-radius: 25px;
 }
+.habitacionesContainerCards div p{
+    font-family: 'Roboto';
+    font-size: 15px;
+}
 .habitacionesContainerCardsImage{
     width: 100%;
     border-radius: 25px;
 }
 .titleInfoHabitacion{
-    padding: 12px
+    padding: 12px;
 }
 .buttonReservaHabitacion{
     border: 1px solid black;
@@ -104,6 +116,8 @@ a{
     border: 1px solid black;
     height: 20%;
     margin-top: 5%;
+    font-family: 'Roboto';
+    font-size: 15px;
 }
 .footerCopahue{
     text-align: center;
@@ -157,6 +171,9 @@ a{
     animation: carrousel 20s infinite;
 }
 @media (max-width: 375px) {
+    .arrowsHeader{
+        display: none;
+    }
     .navBar ul{
         text-align: center;
         display: flex;
