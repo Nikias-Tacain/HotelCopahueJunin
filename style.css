@@ -242,6 +242,10 @@ a{
     .buttonReservaHabitacion{
         width: 50%;
     }
+    .reservaSeccion{
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:768px) {
     .inicio{
